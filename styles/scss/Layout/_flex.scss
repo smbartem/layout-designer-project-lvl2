@@ -1,0 +1,34 @@
+.display-flex {
+  @include flexbox();
+  @include flex-wrap();
+}
+
+.flex-start {
+  @include align-items($start);
+}
+
+.align-items-center {
+  @include align-items();
+}
+
+.flex-space-between {
+  @include flexbox();
+  @include justify-content($between);
+}
+
+.flex-column-center {
+  @include flexbox();
+  @include justify-content();
+  @include flex-direction();
+  @include align-items();
+}
+
+.flex-column {
+  @include flexbox();
+  @include flex-direction();
+}
+
+.align-content-s-b {
+  align-content: space-between;
+}
+

@@ -1,0 +1,34 @@
+//Подключение шрифта
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+//Цвета текста
+$color-white: #FFFFFF;
+$color-gray: #808080;
+$color-gray-light: #CACACA;
+$color-gray-dark: #555555;
+$color-orange-bright: #F89202;
+$color-silver: #EEEEEE;
+
+//Цвета фона
+$background-gray: #3C3B3D;
+$background-white-transparent: rgba(255, 255, 255, 0.1);
+$background-green: #34C176;
+$background-deep-purple: #08020D;
+$background-pink: #FF4157;
+$background-purple-light: #5328A1;
+$background-orange-dark: #95390C;
+$background-gradient-purple-orange: linear-gradient(89.02deg, #5328A1 32.83%, #95390C 81.56%);
+
+//flex position
+$start: flex-start;
+$end: flex-end;
+$between: space-between;
+$around: space-around ;
+$baseline: baseline;
+
+//basis length
+$b-width: 5;
+$b-indentation: 5;

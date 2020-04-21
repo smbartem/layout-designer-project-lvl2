@@ -1,0 +1,20 @@
+.logo-music-box {
+  width: 19.87px;
+  height: 17.14px;
+}
+
+.logo-buttons-artist {
+  width: 20px;
+  @include margin-all(0, 15px);
+}
+
+.logo-play-button {
+  width: 25px;
+}
+
+.logo-album {
+  width: 55.3px;
+  height: 50px;
+  @include margin(right, 16.59);
+}
+

@@ -1,0 +1,10 @@
+@import "../Components/registration-form.scss";
+@import "../Components/button-registration-form.scss";
+
+.banner {
+  @include padding(top, 272);
+  @include padding(bottom, 254);
+  @include background-image("../images/banner.png");
+}
+
+

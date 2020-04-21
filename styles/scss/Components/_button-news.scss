@@ -1,0 +1,9 @@
+.button-news {
+  @include padding-all(6px, 0);
+  width: 129px;
+}
+
+.button-news-decor {
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+}

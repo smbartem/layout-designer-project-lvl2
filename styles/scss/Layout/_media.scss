@@ -1,0 +1,305 @@
+@media screen and (max-width: 1400px) and (min-width: 1280px) {
+  .container-footer-menu-1 {
+    width: 950px;
+    margin-left: 18.75%;
+  }
+
+}
+
+
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+ 
+  .container {
+    width: 1000px;
+  }
+  
+  .subscription-container {
+    width: 293px;
+  }
+
+  .news-photo-size, .mobile-app-text-width {
+    width: 470px;
+  }
+  
+  .mobile-app-margin {
+    margin-right: 175px;
+  }
+
+  .container-artists-track {
+    width: 450px;
+    @include margin(right, 50);
+  }
+
+  .discography-container-height, .similar-singers-container-height {
+    height: 624px;
+  }
+
+  .album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .similar-artists-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .button-discography {
+    margin: 165px 210px 10px 15px;
+  }
+
+  
+  .container-footer-menu-1 {
+    width: 800px;
+  }
+
+  .container-footer-menu-2 {
+    width: 445px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+
+  .container {
+    width: 728px;
+  }
+
+  .subscription-container {
+    width: 213px;
+  }
+
+  .news-photo-size, .mobile-app-text-width {
+    width: 342px;
+  }
+  
+  .mobile-app-margin {
+    @include margin(right, 100);
+  }
+
+  .mobile-app-image {
+    width: 286px;
+  }
+
+  .searching-form {
+    width: 200px;
+  }
+  
+  .container-artists-track {
+    width: 322.65px;
+    @include margin(right, 41.35);
+  }
+
+  .discography-container-height, .similar-singers-container-height {
+    height: 448px;
+  }
+
+  .album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .similar-artists-photo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .button-discography {
+    @include margin(top, 125);
+    @include margin(left, 10);
+  }
+
+  .container-footer-menu-1 {
+    width: 610px;
+  }
+
+  .container-footer-menu-2, .container-footer-menu-1 {
+    @include margin(left, 117);
+  }
+
+  .margin-right-50 {
+    margin-right: 25px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container, .button-news, .button-mobile-app, .registration-form, .news-photo-size, 
+  .mobile-app-text-width, .searching-form, .button-artist {
+    width: 400px;
+  }
+
+  .subscription-container {
+    width: 280px;
+    @include padding(top, 20);
+    @include padding(bottom, 15);
+    @include margin(bottom, 50);
+  }
+
+  .subscription-subtitle, .discography-title {
+    @include fonts(1.6, 1.9);
+  }
+  
+  .media-flex-direction-column {
+    @include flex-direction();
+  }
+
+  .news-author-width {
+    width: 280px;
+  }
+
+  .subscription-form-margin {
+    @include margin(bottom, 167.5);
+  }
+
+  .button-subscription-text, .subscription-text, .banner-text, .similar-artists-text {
+    @include fonts(1.2, 1.4);
+  }
+
+  .button-subscription-margin {
+    @include margin(bottom, 41);
+  }
+
+  .mobile-app-margin {
+    @include margin(right, 0);
+  }
+  
+  .mobile-app-image {
+    width: 286px;
+  }
+    
+  .media-margin-bottom-30 {
+    @include margin(bottom, 30);
+  }
+ 
+  .discography-container-height {
+    height: 781px;
+  }
+
+  .similar-singers-container-height {
+    height: 1042px;
+  }
+
+  .container-footer-menu-1, .container-footer-menu-2 {
+    width: 300px;
+  }
+
+  .button-discography {
+    @include margin(top, 135);
+    @include margin(left, 10);
+  }
+
+  .container-artists-track {
+    width: 360px;
+    @include margin(right, 20);
+  }
+
+  .album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .similar-artists-photo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .discography-title, .footer-icon-container {
+    width: 150px;
+  }
+
+  .order-mobile-1 {
+    order: 1;
+  }
+
+  .order-mobile-2 {
+    order: 2;
+  }
+
+  .order-mobile-3 {
+    order: 3;
+  }
+  
+  .banner-main-title {
+    @include fonts(3, 3.5);
+  }
+
+  .title {
+    @include fonts(2, 2.3);
+  }
+
+  .button-artist {
+    @include margin(bottom, 25);
+    @include margin(right, 0);
+  }
+
+  .margin-bottom-15 {
+    @include margin(bottom, 10);
+  }
+
+  .media-margin-bottom-40 {
+    @include margin(bottom, 40);
+  }
+
+  .media-margin-bottom-20 {
+    @include margin(bottom, 20);
+  }
+
+  .header-menu-link-margin {
+    @include margin(bottom, 10);
+  }
+
+  .media-margin-bottom-17 {
+    @include margin(bottom, 17);
+  }  
+
+  .margin-right-50 {
+    @include margin(right, 0);
+  }
+
+  .media-margin-right-20 {
+    @include margin(right, 20);
+  } 
+}
+
+@media screen and (max-width: 425px) {
+ .container, .button-news, .button-mobile-app, .registration-form, .news-photo-size, 
+  .mobile-app-text-width, .searching-form, .button-artist {
+    width: 280px;
+  }
+
+  .media-flex-direction-column {
+    @include flex-direction();
+  }
+
+  .mobile-app-image {
+    width: 280px;
+  }
+    
+  .discography-container-height {
+    height: 714px;
+  }
+
+  .similar-singers-container-height {
+    height: 882px;
+  }
+
+  .container-footer-menu-1, .container-footer-menu-2 {
+    width: 280px;
+    margin-left: 20px;
+  }
+
+  .button-discography {
+    margin-top: 100px;
+    margin-left: 5px;
+  }
+
+  .container-artists-track {
+    width: 280px;
+    margin-right: 0px;
+  }
+
+  .album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .similar-artists-photo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .discography-title, .similar-artists-text, .footer-icon-container  {
+    width: 130px;
+  }
+}

@@ -1,0 +1,7 @@
+@import "../Components/_searching-form.scss";
+
+.header {
+  position: absolute;
+  width: 100%;
+  @include margin(top, 25);
+}

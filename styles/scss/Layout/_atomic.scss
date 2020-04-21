@@ -1,0 +1,57 @@
+
+//margin
+@include margin-new-class(bottom, 10);
+@include margin-new-class(bottom, 15);
+@include margin-new-class(bottom, 20);
+@include margin-new-class(bottom, 16);
+@include margin-new-class(bottom, 25);
+@include margin-new-class(bottom, 30);
+@include margin-new-class(bottom, 40);
+@include margin-new-class(bottom, 45);
+@include margin-new-class(bottom, 50);
+@include margin-new-class(bottom, 70);
+
+.subscription-form-margin {
+  @include margin(bottom, 223);
+}
+
+.button-subscription-margin {
+  @include margin(bottom, 50);
+}
+
+.button-artist {
+  @include margin(right, 35);
+}
+
+.mobile-app-margin {
+  @include margin(right, 210);
+}
+
+.header-menu-link-margin {
+  @include margin(right, 37);
+}
+
+@include margin-new-class(right, 50);
+
+//padding
+@include padding-new-class(bottom, 5);
+@include padding-new-class(bottom, 100);
+@include padding-new-class(top, 100);
+
+//width
+.width-87 {
+  max-width: 87.5%;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.news-author-width{
+  max-width: 210px;
+}
+
+.mobile-app-text-width {
+  max-width: 566.23px;
+}
+

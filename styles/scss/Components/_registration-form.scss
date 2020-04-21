@@ -1,0 +1,12 @@
+.registration-form {
+  width: 270px;
+  height: 50px;
+}
+
+.registration-form-decor {
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px $background-white-transparent solid;
+  background-color: $background-white-transparent;
+}
+

@@ -1,0 +1,88 @@
+//отступы
+@mixin margin-new-class ($orientation, $size) {
+  .margin-#{$orientation}-#{$size} {
+    margin-#{$orientation}: #{$size}px;
+  }
+}
+
+@mixin padding-new-class ($orientation, $size) {
+  .padding-#{$orientation}-#{$size} {
+    padding-#{$orientation}: #{$size}px;
+  }
+}
+
+@mixin margin ($orientation, $size) {
+  margin-#{$orientation}: #{$size}px;
+}
+
+@mixin padding ($orientation, $size) {
+  padding-#{$orientation}: #{$size}px;
+}
+
+@mixin margin-all ($vertical, $horizontal) {
+  margin: $vertical $horizontal;
+}
+
+@mixin padding-all ($vertical, $horizontal) {
+  padding: $vertical $horizontal;
+}
+
+
+//шрифты
+@mixin fonts ($font-size: 1, $line-height: 1) {
+  font-size: #{$font-size}rem;
+  line-height: #{$line-height}rem;
+}
+
+@mixin fonts-decor ($font-weight: normal,$color: $color-gray,
+$text-transform: none) {
+  font-weight: $font-weight;
+  color: $color;
+  text-transform: $text-transform;
+}
+
+//placeholder 
+@mixin searching-form-text {
+  @include fonts(1.1, 1.3);
+  @include fonts-decor(bold, $color-gray, uppercase);
+  @include padding(left, 14);
+}
+
+@mixin registration-form-text {
+  @include fonts(1.4, 1.6);
+  @include fonts-decor(bold, $color-white);
+  @include padding(left, 20);
+}
+
+//flex position
+@mixin flexbox {
+  display: flex;
+}
+@mixin flex-direction ($flex-direction: column) {
+  flex-direction: $flex-direction;
+}
+@mixin justify-content ($justify-content: center) {
+  justify-content: $justify-content;
+}
+@mixin align-items ($align-items: center) {
+ align-items: $align-items; 
+}
+@mixin flex-wrap ($flex-wrap: wrap) {
+  flex-wrap: $flex-wrap;
+};
+
+//background-image
+@mixin background-image-new-class ($name, $url) {
+  .#{$name} {
+    background: url($url) no-repeat top center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@mixin background-image ($url) {
+  background: url($url) no-repeat top center;
+  background-size: cover;
+}
+

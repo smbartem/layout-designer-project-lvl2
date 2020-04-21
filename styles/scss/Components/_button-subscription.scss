@@ -1,0 +1,10 @@
+.button-subscription {
+  width:  85.23%;
+  @include padding-all (21px, 0);
+}
+
+.button-subscription-decor {
+  border: 4px solid $color-white;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

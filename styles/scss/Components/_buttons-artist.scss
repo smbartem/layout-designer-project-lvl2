@@ -1,0 +1,16 @@
+.button-artist {
+  width: 200px;
+  height: 50px;
+}
+
+.button-artist-decor-purple {
+  background-color: $background-purple-light;
+  border: 1px $background-purple-light solid;
+  box-sizing: border-box;
+}
+
+.button-artist-decor-orange {
+  background-color: $background-orange-dark;
+  border: 1px $background-orange-dark solid;
+  box-sizing: border-box;
+}

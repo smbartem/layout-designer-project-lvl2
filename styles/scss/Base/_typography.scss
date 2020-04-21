@@ -1,0 +1,205 @@
+html {
+  font-size: 10px;
+}
+
+body, a, input {
+  font-family: "Roboto-Regular";
+  text-decoration: none;
+  @include fonts(1.6, 1.9);
+  @include fonts-decor();
+}
+
+.header-text-style {
+  @include fonts-decor(bold, $color-gray, uppercase);
+}
+
+.header-text-style, .subscription-price-text {
+  @include fonts(1.1, 1.3);
+}
+
+.color-white {
+  color: $color-white;
+}
+
+.color-gray {
+  color: $color-gray;
+}
+
+.banner-main-title {
+  @include fonts(6, 7);
+  @include fonts-decor(bold, $color-white, uppercase);
+}
+
+.banner-title {
+  @include fonts(3, 3.5);
+  @include fonts-decor(bold, $color-white, uppercase);
+}
+
+.banner-text, .footer-title {
+  @include fonts(1.8, 2.1);
+}
+
+.banner-text {
+  @include fonts-decor(bold, $color-white);
+}
+
+.searching-form-text {
+  &::-webkit-input-placeholder {
+    @include searching-form-text();
+  }
+
+  &::-moz-placeholder {
+    @include searching-form-text();
+  }
+
+  &:-moz-placeholder {
+    @include searching-form-text();
+  }
+
+  &:-ms-input-placeholder {
+    @include searching-form-text();
+  }
+}
+
+.registration-form-text {
+  &::-webkit-input-placeholder {
+    @include registration-form-text();
+  }
+
+  &::-moz-placeholder {
+    @include registration-form-text();
+  }
+
+  &:-moz-placeholder {
+    @include registration-form-text();
+  }
+
+  &:-ms-input-placeholder {
+    @include registration-form-text();
+  }
+}
+
+.button-registration-form-text, .button-mobile-app-text, .button-artist-text, .artist-track-text {
+  @include fonts(1.4, 1.6);
+}
+
+.button-registration-form-text {
+  @include fonts-decor(bold, $color-white, uppercase);
+}
+
+.title {
+  @include fonts(3.8, 4.5);
+  @include fonts-decor(bold, $color-white, uppercase);
+}
+
+.subscription-subtitle, .button-subscription-text {
+  @include fonts(2.4, 2.8);
+}
+
+.subscription-subtitle {
+  @include fonts-decor(normal, $color-white, uppercase);
+  text-align: center;
+}
+
+.subscription-price {
+  @include fonts(6.0, 7.0);
+  @include fonts-decor(normal, $color-white, uppercase);
+}
+
+.subscription-price-currency, .news-subtitle {
+  @include fonts(3.0, 3.5);
+}
+
+.subscription-price-currency {
+  @include fonts-decor(normal, $color-white, uppercase);
+}
+
+.subscription-price-text {
+  @include fonts-decor(normal, $color-white);
+  text-align: center;
+}
+
+.subscription-text {
+  @include fonts(2.2, 2.6);
+  @include fonts-decor(normal, $color-white);
+  text-align: center;
+}
+
+.button-subscription-text {
+  @include fonts-decor(normal, $color-white, uppercase);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.news-subtitle {
+  @include fonts-decor(normal, $color-white);
+  
+}
+
+.news-text {
+  @include fonts(1.4, 2.8);
+  @include fonts-decor(normal);
+}
+
+.news-author-text {
+  @include fonts(1.2, 2.8);
+  &.orange {
+    @include fonts-decor(normal, $color-orange-bright, uppercase);
+  }
+  &.dark-gray {
+    @include fonts-decor(normal, $color-gray-dark, uppercase);
+  }
+  &.button-news-text {
+    @include fonts-decor(bold, $color-gray, uppercase);
+    text-align: center;
+  }
+}
+
+.button-mobile-app-text {
+  @include fonts-decor(normal, $color-white);
+  text-align: center;
+}
+
+.footer-link {
+  @include fonts-decor(normal, $color-gray-light);
+}
+
+.footer-title {
+  @include fonts-decor(bold, $color-gray-light);
+}
+
+.button-artist-text {
+  @include fonts-decor(normal, $color-white, uppercase);
+}
+
+.artist-track-text {
+  text-align: center;
+  
+  &.track-title {
+    @include fonts-decor(normal, $color-white);
+  }
+
+  &.track-length {
+    @include fonts-decor(normal, $color-gray);
+  }
+  
+}
+
+.artist-singer-text {
+  @include fonts(1.2, 1.4);
+  @include fonts-decor(normal, $color-gray);
+}
+
+.discography-title {
+  @include fonts(2.0, 2.3);
+  @include fonts-decor(bold, $color-white);
+}
+
+.similar-artists-text {
+  @include fonts-decor(normal, $color-white);
+  text-align: center;
+}
+
+.text-align-center {
+  text-align: center;
+}

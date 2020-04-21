@@ -1,0 +1,10 @@
+.button-mobile-app {
+  @include padding-all(17px, 0);
+  width: 173.76px;
+}
+
+.button-mobile-app-decor {
+  background-color: $background-pink;
+  border: 1px $background-pink solid;
+  border-radius: 50px;
+}

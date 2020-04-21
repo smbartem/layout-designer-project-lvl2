@@ -1,0 +1,30 @@
+@import "Base/_base.scss";
+@import "Base/_reset.scss";
+@import "Abstracts/mixins-functions";
+@import "Base/_typography.scss";
+@import "Components/_logo.scss";
+@import "Layout/_flex.scss";
+@import "Layout/_header.scss";
+@import "Layout/footer.scss";
+@import "Layout/atomic.scss";
+@import "Pages/home-page.scss";
+@import "Pages/artists-page.scss";
+
+
+  
+body {
+  @include margin-all(0, auto);
+  @include padding-all(0, 0);
+}
+
+.container {
+  max-width: 1200px;
+  @include margin-all(0, auto);
+  overflow: hidden;
+}
+
+.main-background {
+  background-color: $background-deep-purple;
+}
+
+@import "Layout/_media.scss";

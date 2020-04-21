@@ -1,0 +1,997 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body, a, input {
+  font-family: "Roboto-Regular";
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: normal;
+  color: #808080;
+  text-transform: none;
+}
+
+.header-text-style {
+  font-weight: bold;
+  color: #808080;
+  text-transform: uppercase;
+}
+
+.header-text-style, .subscription-price-text {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+
+.color-white {
+  color: #FFFFFF;
+}
+
+.color-gray {
+  color: #808080;
+}
+
+.banner-main-title {
+  font-size: 6rem;
+  line-height: 7rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.banner-title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.banner-text, .footer-title {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+
+.banner-text {
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: none;
+}
+
+.searching-form-text::-webkit-input-placeholder {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-weight: bold;
+  color: #808080;
+  text-transform: uppercase;
+  padding-left: 14px;
+}
+.searching-form-text::-moz-placeholder {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-weight: bold;
+  color: #808080;
+  text-transform: uppercase;
+  padding-left: 14px;
+}
+.searching-form-text:-moz-placeholder {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-weight: bold;
+  color: #808080;
+  text-transform: uppercase;
+  padding-left: 14px;
+}
+.searching-form-text:-ms-input-placeholder {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-weight: bold;
+  color: #808080;
+  text-transform: uppercase;
+  padding-left: 14px;
+}
+
+.registration-form-text::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: none;
+  padding-left: 20px;
+}
+.registration-form-text::-moz-placeholder {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: none;
+  padding-left: 20px;
+}
+.registration-form-text:-moz-placeholder {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: none;
+  padding-left: 20px;
+}
+.registration-form-text:-ms-input-placeholder {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: none;
+  padding-left: 20px;
+}
+
+.button-registration-form-text, .button-mobile-app-text, .button-artist-text, .artist-track-text {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.button-registration-form-text {
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 3.8rem;
+  line-height: 4.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.subscription-subtitle, .button-subscription-text {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.subscription-subtitle {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscription-price {
+  font-size: 6rem;
+  line-height: 7rem;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.subscription-price-currency, .news-subtitle {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.subscription-price-currency {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.subscription-price-text {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: none;
+  text-align: center;
+}
+
+.subscription-text {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: none;
+  text-align: center;
+}
+
+.button-subscription-text {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.news-subtitle {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: none;
+}
+
+.news-text {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  font-weight: normal;
+  color: #808080;
+  text-transform: none;
+}
+
+.news-author-text {
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+}
+.news-author-text.orange {
+  font-weight: normal;
+  color: #F89202;
+  text-transform: uppercase;
+}
+.news-author-text.dark-gray {
+  font-weight: normal;
+  color: #555555;
+  text-transform: uppercase;
+}
+.news-author-text.button-news-text {
+  font-weight: bold;
+  color: #808080;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button-mobile-app-text {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: none;
+  text-align: center;
+}
+
+.footer-link {
+  font-weight: normal;
+  color: #CACACA;
+  text-transform: none;
+}
+
+.footer-title {
+  font-weight: bold;
+  color: #CACACA;
+  text-transform: none;
+}
+
+.button-artist-text {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.artist-track-text {
+  text-align: center;
+}
+.artist-track-text.track-title {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: none;
+}
+.artist-track-text.track-length {
+  font-weight: normal;
+  color: #808080;
+  text-transform: none;
+}
+
+.artist-singer-text {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: normal;
+  color: #808080;
+  text-transform: none;
+}
+
+.discography-title {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: none;
+}
+
+.similar-artists-text {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-transform: none;
+  text-align: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.logo-music-box {
+  width: 19.87px;
+  height: 17.14px;
+}
+
+.logo-buttons-artist {
+  width: 20px;
+  margin: 0 15px;
+}
+
+.logo-play-button {
+  width: 25px;
+}
+
+.logo-album {
+  width: 55.3px;
+  height: 50px;
+  margin-right: 16.59px;
+}
+
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-content-s-b {
+  align-content: space-between;
+}
+
+.searching-form {
+  width: 278.15px;
+  height: 25.71px;
+}
+
+.searching-decor {
+  background: #3C3B3D;
+  border: 1px #3C3B3D solid;
+  border-radius: 50px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.footer-background {
+  background: linear-gradient(89.02deg, #5328A1 32.83%, #95390C 81.56%);
+}
+
+.container-footer-menu-1 {
+  width: 1020px;
+  margin-left: 18.75%;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.container-footer-menu-2 {
+  width: 534px;
+  margin-left: 18.75%;
+  padding: 50px 0;
+}
+
+.separator-big {
+  height: 1px;
+  margin: 0;
+  color: #EEEEEE;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.margin-bottom-25 {
+  margin-bottom: 25px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.margin-bottom-45 {
+  margin-bottom: 45px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-70 {
+  margin-bottom: 70px;
+}
+
+.subscription-form-margin {
+  margin-bottom: 223px;
+}
+
+.button-subscription-margin {
+  margin-bottom: 50px;
+}
+
+.button-artist {
+  margin-right: 35px;
+}
+
+.mobile-app-margin {
+  margin-right: 210px;
+}
+
+.header-menu-link-margin {
+  margin-right: 37px;
+}
+
+.margin-right-50 {
+  margin-right: 50px;
+}
+
+.padding-bottom-5 {
+  padding-bottom: 5px;
+}
+
+.padding-bottom-100 {
+  padding-bottom: 100px;
+}
+
+.padding-top-100 {
+  padding-top: 100px;
+}
+
+.width-87 {
+  max-width: 87.5%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.news-author-width {
+  max-width: 210px;
+}
+
+.mobile-app-text-width {
+  max-width: 566.23px;
+}
+
+.registration-form {
+  width: 270px;
+  height: 50px;
+}
+
+.registration-form-decor {
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-registration-form {
+  width: 570px;
+  height: 50px;
+}
+
+.button-registration-form-decor {
+  background-color: #34C176;
+  border-radius: 3px;
+  border: 1px #34C176 solid;
+  box-sizing: border-box;
+}
+
+.banner {
+  padding-top: 272px;
+  padding-bottom: 254px;
+  background: url("../images/banner.png") no-repeat top center;
+  background-size: cover;
+}
+
+.button-subscription {
+  width: 85.23%;
+  padding: 21px 0;
+}
+
+.button-subscription-decor {
+  border: 4px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subscription-container {
+  width: 352px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.background-subscription-free {
+  background: url("../images/subscribe_1.png") no-repeat top center;
+  background-size: cover;
+}
+
+.background-subscription-standart {
+  background: url("../images/subscribe_2.png") no-repeat top center;
+  background-size: cover;
+}
+
+.background-subscription-premium {
+  background: url("../images/subscribe_3.png") no-repeat top center;
+  background-size: cover;
+}
+
+.button-news {
+  padding: 6px 0;
+  width: 129px;
+}
+
+.button-news-decor {
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+}
+
+.separator-small {
+  height: 11px;
+  width: 1px;
+  margin: 0;
+}
+
+.button-mobile-app {
+  padding: 17px 0;
+  width: 173.76px;
+}
+
+.button-mobile-app-decor {
+  background-color: #FF4157;
+  border: 1px #FF4157 solid;
+  border-radius: 50px;
+}
+
+.button-artist {
+  width: 200px;
+  height: 50px;
+}
+
+.button-artist-decor-purple {
+  background-color: #5328A1;
+  border: 1px #5328A1 solid;
+  box-sizing: border-box;
+}
+
+.button-artist-decor-orange {
+  background-color: #95390C;
+  border: 1px #95390C solid;
+  box-sizing: border-box;
+}
+
+.artists {
+  padding-top: 280px;
+  padding-bottom: 82px;
+  background: url("../images/Morten Harket.png") no-repeat 73% center;
+  background-size: cover;
+}
+
+.container-artists-track {
+  width: 531.98px;
+  margin-right: 68.02px;
+}
+
+.button-discography {
+  background-color: rgba(240, 240, 240, 0);
+  margin: 215px 210p 10px 15px;
+}
+
+.album-1 {
+  background: url("../images/Brother.png") no-repeat top center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.album-2 {
+  background: url("../images/Out of My Hands.png") no-repeat top center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.album-3 {
+  background: url("../images/Letter from Egypt.png") no-repeat top center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.album-4 {
+  background: url("../images/Vogts Villa.png") no-repeat top center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.album-5 {
+  background: url("../images/Wild Seed.png") no-repeat top center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.album-6 {
+  background: url("../images/Poetenes Evangelium.png") no-repeat top center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.discography-container-height, .similar-singers-container-height {
+  height: 674px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-background {
+  background-color: #08020D;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1280px) {
+  .container-footer-menu-1 {
+    width: 950px;
+    margin-left: 18.75%;
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+
+  .container {
+    width: 1000px;
+  }
+
+  .subscription-container {
+    width: 293px;
+  }
+
+  .news-photo-size, .mobile-app-text-width {
+    width: 470px;
+  }
+
+  .mobile-app-margin {
+    margin-right: 175px;
+  }
+
+  .container-artists-track {
+    width: 450px;
+    margin-right: 50px;
+  }
+
+  .discography-container-height, .similar-singers-container-height {
+    height: 624px;
+  }
+
+  .album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .similar-artists-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .button-discography {
+    margin: 165px 210px 10px 15px;
+  }
+
+  .container-footer-menu-1 {
+    width: 800px;
+  }
+
+  .container-footer-menu-2 {
+    width: 445px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+
+  .container {
+    width: 728px;
+  }
+
+  .subscription-container {
+    width: 213px;
+  }
+
+  .news-photo-size, .mobile-app-text-width {
+    width: 342px;
+  }
+
+  .mobile-app-margin {
+    margin-right: 100px;
+  }
+
+  .mobile-app-image {
+    width: 286px;
+  }
+
+  .searching-form {
+    width: 200px;
+  }
+
+  .container-artists-track {
+    width: 322.65px;
+    margin-right: 41.35px;
+  }
+
+  .discography-container-height, .similar-singers-container-height {
+    height: 448px;
+  }
+
+  .album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .similar-artists-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .button-discography {
+    margin-top: 125px;
+    margin-left: 10px;
+  }
+
+  .container-footer-menu-1 {
+    width: 610px;
+  }
+
+  .container-footer-menu-2, .container-footer-menu-1 {
+    margin-left: 117px;
+  }
+
+  .margin-right-50 {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container, .button-news, .button-mobile-app, .registration-form, .news-photo-size,
+.mobile-app-text-width, .searching-form, .button-artist {
+    width: 400px;
+  }
+
+  .subscription-container {
+    width: 280px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+
+  .subscription-subtitle, .discography-title {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  .media-flex-direction-column {
+    flex-direction: column;
+  }
+
+  .news-author-width {
+    width: 280px;
+  }
+
+  .subscription-form-margin {
+    margin-bottom: 167.5px;
+  }
+
+  .button-subscription-text, .subscription-text, .banner-text, .similar-artists-text {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  .button-subscription-margin {
+    margin-bottom: 41px;
+  }
+
+  .mobile-app-margin {
+    margin-right: 0px;
+  }
+
+  .mobile-app-image {
+    width: 286px;
+  }
+
+  .media-margin-bottom-30 {
+    margin-bottom: 30px;
+  }
+
+  .discography-container-height {
+    height: 781px;
+  }
+
+  .similar-singers-container-height {
+    height: 1042px;
+  }
+
+  .container-footer-menu-1, .container-footer-menu-2 {
+    width: 300px;
+  }
+
+  .button-discography {
+    margin-top: 135px;
+    margin-left: 10px;
+  }
+
+  .container-artists-track {
+    width: 360px;
+    margin-right: 20px;
+  }
+
+  .album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .similar-artists-photo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .discography-title, .footer-icon-container {
+    width: 150px;
+  }
+
+  .order-mobile-1 {
+    order: 1;
+  }
+
+  .order-mobile-2 {
+    order: 2;
+  }
+
+  .order-mobile-3 {
+    order: 3;
+  }
+
+  .banner-main-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  .button-artist {
+    margin-bottom: 25px;
+    margin-right: 0px;
+  }
+
+  .margin-bottom-15 {
+    margin-bottom: 10px;
+  }
+
+  .media-margin-bottom-40 {
+    margin-bottom: 40px;
+  }
+
+  .media-margin-bottom-20 {
+    margin-bottom: 20px;
+  }
+
+  .header-menu-link-margin {
+    margin-bottom: 10px;
+  }
+
+  .media-margin-bottom-17 {
+    margin-bottom: 17px;
+  }
+
+  .margin-right-50 {
+    margin-right: 0px;
+  }
+
+  .media-margin-right-20 {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container, .button-news, .button-mobile-app, .registration-form, .news-photo-size,
+.mobile-app-text-width, .searching-form, .button-artist {
+    width: 280px;
+  }
+
+  .media-flex-direction-column {
+    flex-direction: column;
+  }
+
+  .mobile-app-image {
+    width: 280px;
+  }
+
+  .discography-container-height {
+    height: 714px;
+  }
+
+  .similar-singers-container-height {
+    height: 882px;
+  }
+
+  .container-footer-menu-1, .container-footer-menu-2 {
+    width: 280px;
+    margin-left: 20px;
+  }
+
+  .button-discography {
+    margin-top: 100px;
+    margin-left: 5px;
+  }
+
+  .container-artists-track {
+    width: 280px;
+    margin-right: 0px;
+  }
+
+  .album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .similar-artists-photo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .discography-title, .similar-artists-text, .footer-icon-container {
+    width: 130px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

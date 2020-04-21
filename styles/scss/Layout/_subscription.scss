@@ -1,0 +1,21 @@
+@import "../Components/_button-subscription.scss";
+
+.subscription-container {
+  width: 352px;
+  @include padding(top, 25);
+  @include padding(bottom, 50);
+}
+
+.background-subscription-free {
+  @include background-image("../images/subscribe_1.png");
+}
+
+.background-subscription-standart {
+  @include background-image("../images/subscribe_2.png");
+}
+
+.background-subscription-premium {
+  @include background-image("../images/subscribe_3.png");
+}
+
+

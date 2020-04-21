@@ -9,3 +9,6 @@
    Aborted - Deployment not initiated.
 
 Бывает даже нет ответа от сервера
+
+Бывает пишет you do not have permission to publish to literate-color.surge.sh
+

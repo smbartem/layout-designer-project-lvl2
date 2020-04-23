@@ -14,21 +14,24 @@
 
     <div class="container flex-space-between flex-start media-flex-direction-column padding-bottom-5">
 
-      <div class="display-flex align-items-center order-mobile-1 media-margin-bottom-17">
+      <div class="display-flex align-items-center media-margin-bottom-17">
         <img src="images/logo.svg" alt="Music-Box-logo" class="logo-music-box">
         <h2 class="header-text-style color-white">Music Box</h2>
       </div>
+      <div class="flex-space-between flex-start media-flex-direction-column header-menu-form-width">
+        <nav class="display-flex flex-start media-flex-direction-column order-mobile-2">
+          <a href="#" class="header-text-style header-menu-link-margin color-white">Главная</a>
+          <a href="#" class="header-text-style header-menu-link-margin">Каталог</a>
+          <a href="catalog.html" class="header-text-style header-menu-link-margin">Иcполнители</a>
+          <a href="#" class="header-text-style">Контакты</a>
+        </nav>
 
-      <nav class="display-flex media-flex-direction-column order-mobile-3">
-        <a href="#" class="header-text-style header-menu-link-margin color-white">Главная</a>
-        <a href="#" class="header-text-style header-menu-link-margin">Каталог</a>
-        <a href="#" class="header-text-style header-menu-link-margin">Иcполнители</a>
-        <a href="#" class="header-text-style">Контакты</a>
-      </nav>
-
-      <div class="order-mobile-2">
-        <input type="search" placeholder="Поиск..." class="searching-form searching-decor searching-form-text media-margin-bottom-20">
+        <div class="order-mobile-1">
+          <input type="search" placeholder="Поиск..."
+            class="searching-form searching-decor searching-form-text media-margin-bottom-20">
+        </div>
       </div>
+
 
     </div>
 
@@ -41,7 +44,8 @@
       <div class="container flex-column-center">
         <h1 class="banner-main-title text-align-center margin-bottom-10">Онлайн музыка где угодно</h1>
         <h2 class="banner-title margin-bottom-45">без ограничений</h2>
-        <p class="banner-text text-align-center margin-bottom-40">Получите доступ всего за несколько шагов. Заполните форму ниже и
+        <p class="banner-text text-align-center margin-bottom-40">Получите доступ всего за несколько шагов. Заполните
+          форму ниже и
           откройте мир
           музыки</p>
         <form action="#" method="POST" class="flex-column-center">
@@ -62,7 +66,8 @@
 
       <div class="container flex-column-center">
         <h2 class="title margin-bottom-50">Формы подписки</h2>
-        <div class="margin-bottom-50 flex-space-between media-flex-direction-column align-items-center width-100">
+        <div
+          class="margin-bottom-subscription flex-space-between media-flex-direction-column align-items-center width-100">
           <div class="flex-column-center subscription-container background-subscription-free">
             <h3 class="subscription-subtitle subscription-form-margin">Бесплатная</h3>
             <p class="subscription-price margin-bottom-40">0<sup class="subscription-price-currency">руб.</sup></p>
@@ -100,20 +105,21 @@
 
     </section>
 
-    <section class="padding-top-100">
+    <section class="padding-top-news">
 
       <div class="container flex-column-center">
         <h2 class="title margin-bottom-50">Последние новости</h2>
         <div class="flex-space-between media-flex-direction-column width-100 margin-bottom-70">
-          <img src="images/Music to Be Murdered By.png" alt="Music to Be Murdered By" class="news-photo-size media-margin-bottom-20">
+          <img src="images/Music to Be Murdered By.png" alt="Music to Be Murdered By"
+            class="news-photo-size media-margin-bottom-20">
           <div class="flex-column">
             <h3 class="margin-bottom-25 news-subtitle">Music to Be Murdered By</h3>
             <p class="margin-bottom-16 news-text">
               Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. <br />
               На альбоме вас ждёт 20 новых треков.
             </p>
-            <div class="flex-space-between news-author-width margin-bottom-45 ">
-              <img src="images/avatar.png" alt="avatar">
+            <div class="flex-space-between align-items-center news-author-width margin-bottom-author">
+              <img src="images/avatar.png" alt="avatar" class="logo-avatar">
               <p class="news-author-text orange">Music box</p>
               <hr class="separator-small">
               <p class="news-author-text dark-gray">17/01/2020</p>
@@ -128,15 +134,16 @@
               Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. <br />
               Слушайте в числе первых на Music Box
             </p>
-            <div class="flex-space-between news-author-width margin-bottom-45">
-              <img src="images/avatar.png" alt="avatar">
+            <div class="flex-space-between align-items-center news-author-width margin-bottom-author">
+              <img src="images/avatar.png" alt="avatar" class="logo-avatar">
               <p class="news-author-text orange border-right">Music box</p>
               <hr class="separator-small">
               <p class="news-author-text dark-gray">24/02/2020</p>
             </div>
             <a href="#" class="news-author-text button-news-text button-news button-news-decor">К альбому</a>
           </div>
-          <img src="images/Ordinary Man.png" alt="Ordinary Man" class="news-photo-size media-margin-bottom-20 order-mobile-1">
+          <img src="images/Ordinary Man.png" alt="Ordinary Man"
+            class="news-photo-size media-margin-bottom-20 order-mobile-1">
         </div>
       </div>
 

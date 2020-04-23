@@ -45,13 +45,11 @@ $text-transform: none) {
 @mixin searching-form-text {
   @include fonts(1.1, 1.3);
   @include fonts-decor(bold, $color-gray, uppercase);
-  @include padding(left, 14);
 }
 
 @mixin registration-form-text {
   @include fonts(1.4, 1.6);
   @include fonts-decor(bold, $color-white);
-  @include padding(left, 20);
 }
 
 //flex position

@@ -11,6 +11,14 @@
 @include margin-new-class(bottom, 50);
 @include margin-new-class(bottom, 70);
 
+.margin-bottom-author {
+  @include margin(bottom, 45);
+}
+
+.margin-bottom-subscription {
+  @include margin(bottom, 50);
+}
+
 .subscription-form-margin {
   @include margin(bottom, 223);
 }
@@ -38,6 +46,10 @@
 @include padding-new-class(bottom, 100);
 @include padding-new-class(top, 100);
 
+.padding-top-news {
+  @include padding(top, 100);
+}
+
 //width
 .width-87 {
   max-width: 87.5%;
@@ -53,5 +65,9 @@
 
 .mobile-app-text-width {
   max-width: 566.23px;
+}
+
+.header-menu-form-width {
+  width: 83.78%;
 }
 

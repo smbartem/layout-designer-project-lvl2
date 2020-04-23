@@ -173,7 +173,6 @@ body, a, input {
 }
 
 .artist-track-text {
-  text-align: center;
   
   &.track-title {
     @include fonts-decor(normal, $color-white);

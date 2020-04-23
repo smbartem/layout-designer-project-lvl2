@@ -211,10 +211,6 @@
     order: 2;
   }
 
-  .order-mobile-3 {
-    order: 3;
-  }
-  
   .banner-main-title {
     @include fonts(3, 3.5);
   }
@@ -255,6 +251,32 @@
   .media-margin-right-20 {
     @include margin(right, 20);
   } 
+
+  .logo-avatar {
+    height: 25px;
+  }
+
+  .banner-title {
+    @include fonts(1.8, 2.1);
+  }
+
+  .banner {
+    @include padding(top, 264);
+    @include padding(bottom, 50);
+  }
+
+  .margin-bottom-subscription {
+    @include margin(bottom, 0);
+  }
+
+  .padding-top-news {
+    @include padding(top, 44);
+  }
+
+  .margin-bottom-author {
+    @include margin(bottom, 25);
+  }
+
 }
 
 @media screen and (max-width: 425px) {

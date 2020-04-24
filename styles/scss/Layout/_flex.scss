@@ -20,7 +20,7 @@
   @include flexbox();
   @include justify-content();
   @include flex-direction();
-  @include align-items();
+  //@include align-items();
 }
 
 .flex-column {

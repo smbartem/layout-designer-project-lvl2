@@ -19,10 +19,6 @@
   @include margin(bottom, 50);
 }
 
-.subscription-form-margin {
-  @include margin(bottom, 223);
-}
-
 .button-subscription-margin {
   @include margin(bottom, 50);
 }
@@ -53,10 +49,6 @@
 //width
 .width-87 {
   max-width: 87.5%;
-}
-
-.width-100{
-  width: 100%;
 }
 
 .news-author-width{

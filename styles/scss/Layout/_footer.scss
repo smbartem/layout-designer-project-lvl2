@@ -4,14 +4,12 @@
 
 .container-footer-menu-1 {
   width: 1020px;
-  margin-left: 18.75%;
   @include padding(top, 80);
   @include padding(bottom, 100);
 }
 
 .container-footer-menu-2 {
   width: 534px;
-  margin-left: 18.75%;
   @include padding-all(50px, 0);
 }
 

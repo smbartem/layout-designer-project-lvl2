@@ -4,6 +4,7 @@
   width: 352px;
   @include padding(top, 25);
   @include padding(bottom, 50);
+  @include align-items();
 }
 
 .background-subscription-free {

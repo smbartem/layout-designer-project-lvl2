@@ -14,12 +14,12 @@
 
     <div class="container flex-space-between flex-start media-flex-direction-column padding-bottom-5">
 
-      <div class="display-flex align-items-center media-margin-bottom-17">
+      <div class="display-flex align-items-center media-margin-bottom-17 header-logo-flex-grow">
         <img src="images/logo.svg" alt="Music-Box-logo" class="logo-music-box">
         <h2 class="header-text-style color-white">Music Box</h2>
       </div>
-      <div class="flex-space-between flex-start media-flex-direction-column header-menu-form-width">
-        <nav class="display-flex flex-start media-flex-direction-column order-mobile-2">
+      <div class="flex-space-between flex-start media-flex-direction-column header-menu-flex-grow">
+        <nav class="display-flex media-flex-direction-column order-mobile-2">
           <a href="#" class="header-text-style header-menu-link-margin color-white">Главная</a>
           <a href="#" class="header-text-style header-menu-link-margin">Каталог</a>
           <a href="catalog.html" class="header-text-style header-menu-link-margin">Иcполнители</a>
@@ -41,15 +41,15 @@
 
     <section class="banner">
 
-      <div class="container flex-column-center">
+      <div class="container flex-column align-items-center">
         <h1 class="banner-main-title text-align-center margin-bottom-10">Онлайн музыка где угодно</h1>
         <h2 class="banner-title margin-bottom-45">без ограничений</h2>
         <p class="banner-text text-align-center margin-bottom-40">Получите доступ всего за несколько шагов. Заполните
           форму ниже и
           откройте мир
           музыки</p>
-        <form action="#" method="POST" class="flex-column-center">
-          <div class="margin-bottom-30 flex-space-between width-100 media-flex-direction-column align-items-center">
+        <form action="#" method="POST" class="form-container">
+          <div class="margin-bottom-30 flex-space-between media-flex-direction-column align-items-center">
             <input type="text" name="name" placeholder="Имя" required
               class="registration-form-decor registration-form registration-form-text media-margin-bottom-30">
             <input type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -65,11 +65,10 @@
     <section class="padding-top-100">
 
       <div class="container flex-column-center">
-        <h2 class="title margin-bottom-50">Формы подписки</h2>
-        <div
-          class="margin-bottom-subscription flex-space-between media-flex-direction-column align-items-center width-100">
+        <h2 class="title text-align-center margin-bottom-50">Формы подписки</h2>
+        <div class="margin-bottom-subscription flex-space-between media-flex-direction-column align-items-center">
           <div class="flex-column-center subscription-container background-subscription-free">
-            <h3 class="subscription-subtitle subscription-form-margin">Бесплатная</h3>
+            <h3 class="subscription-subtitle">Бесплатная</h3>
             <p class="subscription-price margin-bottom-40">0<sup class="subscription-price-currency">руб.</sup></p>
             <a href="#"
               class="button-subscription button-subscription-decor button-subscription-text  button-subscription-margin">Оформить</a>
@@ -79,7 +78,7 @@
             </p>
           </div>
           <div class="flex-column-center subscription-container background-subscription-standart">
-            <h3 class="subscription-subtitle subscription-form-margin">Стандартная</h3>
+            <h3 class="subscription-subtitle">Стандартная</h3>
             <p class="subscription-price margin-bottom-40">250<sup class="subscription-price-currency">руб.</sup></p>
             <a href="#"
               class="button-subscription button-subscription-decor button-subscription-text button-subscription-margin">Оформить</a>
@@ -88,7 +87,7 @@
             </p>
           </div>
           <div class="flex-column-center subscription-container background-subscription-premium">
-            <h3 class="subscription-subtitle subscription-form-margin">Премиум</h3>
+            <h3 class="subscription-subtitle">Премиум</h3>
             <p class="subscription-price margin-bottom-40">500<sup class="subscription-price-currency">руб.</sup></p>
             <a href="#"
               class="button-subscription button-subscription-decor button-subscription-text  button-subscription-margin">Оформить</a>
@@ -108,8 +107,8 @@
     <section class="padding-top-news">
 
       <div class="container flex-column-center">
-        <h2 class="title margin-bottom-50">Последние новости</h2>
-        <div class="flex-space-between media-flex-direction-column width-100 margin-bottom-70">
+        <h2 class="title margin-bottom-50 text-align-center">Последние новости</h2>
+        <div class="flex-space-between media-flex-direction-column margin-bottom-70">
           <img src="images/Music to Be Murdered By.png" alt="Music to Be Murdered By"
             class="news-photo-size media-margin-bottom-20">
           <div class="flex-column">
@@ -127,7 +126,7 @@
             <a href="#" class="news-author-text button-news-text button-news button-news-decor">К альбому</a>
           </div>
         </div>
-        <div class="flex-space-between media-flex-direction-column width-100">
+        <div class="flex-space-between media-flex-direction-column">
           <div class="flex-column order-mobile-2">
             <h3 class="margin-bottom-25 news-subtitle">Ordinary Man</h3>
             <p class="margin-bottom-16 news-text">
@@ -151,9 +150,9 @@
 
     <section class="padding-top-100 padding-bottom-100">
       <div class="container flex-column-center">
-        <h2 class="title margin-bottom-50">Мобильное приложение</h2>
-        <div class="flex-space-between media-flex-direction-column align-items-center width-100">
-          <div class="flex-column mobile-app-margin order-mobile-2">
+        <h2 class="title margin-bottom-50 text-align-center">Мобильное приложение</h2>
+        <div class="flex-space-between media-flex-direction-column align-items-center">
+          <div class="flex-column order-mobile-2">
             <p class="mobile-app-text mobile-app-text-width margin-bottom-25">
               Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с
               любого устройства на базе операционных систем Androind и iOS
@@ -173,52 +172,55 @@
   </main>
 
   <footer class="footer-background">
-
-    <div class="container-footer-menu-1 flex-space-between media-flex-direction-column">
-      <div class="flex-column media-margin-bottom-40">
-        <a href="#" class="footer-title margin-bottom-30">О нас</a>
-        <a href="#" class="footer-link margin-bottom-20">История компании</a>
-        <a href="#" class="footer-link margin-bottom-20">Карьера</a>
-        <a href="#" class="footer-link margin-bottom-20">Особенности</a>
-        <a href="#" class="footer-link">Пресса</a>
-      </div>
-      <div class="flex-column media-margin-bottom-40">
-        <a href="#" class="footer-title margin-bottom-30">Поддержка</a>
-        <a href="#" class="footer-link margin-bottom-20">База знаний</a>
-        <a href="#" class="footer-link margin-bottom-20">Тарифы</a>
-        <a href="#" class="footer-link margin-bottom-20">Мобильное приложение</a>
-        <a href="#" class="footer-link">Условия использования</a>
-      </div>
-      <div class="flex-column media-margin-bottom-40">
-        <a href="#" class="footer-title margin-bottom-30">Контакты</a>
-        <p class="footer-link margin-bottom-20">hello@music.box</p>
-        <p class="footer-link margin-bottom-20">
-          Russia, Moscow. Music Box
-          studio
-        </p>
-        <p class="footer-link">+ 7 499 999 99 99</p>
-      </div>
-      <div class="flex-column">
-        <a href="#" class="footer-title margin-bottom-30">Подписывайтесь</a>
-        <div class="flex-space-between footer-icon-container">
-          <a href="#"><img src="images/Google+.png" alt="google+-logo"></a>
-          <a href="#"><img src="images/Twitter.png" alt="twitter-logo"></a>
-          <a href="#"><img src="images/Facebook.png" alt="facebook-logo"></a>
-          <a href="#"><img src="images/Instagram.png" alt="instagram-logo"></a>
+    <div class="container">
+      <div class="container-footer-menu-1 flex-space-between media-flex-direction-column">
+        <div class="flex-column media-margin-bottom-40">
+          <a href="#" class="footer-title margin-bottom-30">О нас</a>
+          <a href="#" class="footer-link margin-bottom-20">История компании</a>
+          <a href="#" class="footer-link margin-bottom-20">Карьера</a>
+          <a href="#" class="footer-link margin-bottom-20">Особенности</a>
+          <a href="#" class="footer-link">Пресса</a>
+        </div>
+        <div class="flex-column media-margin-bottom-40">
+          <a href="#" class="footer-title margin-bottom-30">Поддержка</a>
+          <a href="#" class="footer-link margin-bottom-20">База знаний</a>
+          <a href="#" class="footer-link margin-bottom-20">Тарифы</a>
+          <a href="#" class="footer-link margin-bottom-20">Мобильное приложение</a>
+          <a href="#" class="footer-link">Условия использования</a>
+        </div>
+        <div class="flex-column media-margin-bottom-40">
+          <a href="#" class="footer-title margin-bottom-30">Контакты</a>
+          <p class="footer-link margin-bottom-20">hello@music.box</p>
+          <p class="footer-link margin-bottom-20">
+            Russia, Moscow. Music Box
+            studio
+          </p>
+          <p class="footer-link">+ 7 499 999 99 99</p>
+        </div>
+        <div class="flex-column">
+          <a href="#" class="footer-title margin-bottom-30">Подписывайтесь</a>
+          <div class="flex-space-between footer-icon-container">
+            <a href="#"><img src="images/Google+.png" alt="google+-logo"></a>
+            <a href="#"><img src="images/Twitter.png" alt="twitter-logo"></a>
+            <a href="#"><img src="images/Facebook.png" alt="facebook-logo"></a>
+            <a href="#"><img src="images/Instagram.png" alt="instagram-logo"></a>
+          </div>
         </div>
       </div>
     </div>
 
     <hr class="separator-big">
 
-    <div class="container-footer-menu-2">
-      <nav class="flex-space-between media-flex-direction-column footer-icon-container">
-        <a href="#" class="footer-link media-margin-bottom-20">Магазин</a>
-        <a href="#" class="footer-link media-margin-bottom-20">Обслуживание</a>
-        <a href="#" class="footer-link media-margin-bottom-20">Блог</a>
-        <a href="#" class="footer-link media-margin-bottom-20">Поддержка</a>
-        <a href="#" class="footer-link">Контакты</a>
-      </nav>
+    <div class="container">
+      <div class="container-footer-menu-2">
+        <nav class="flex-space-between media-flex-direction-column footer-icon-container">
+          <a href="#" class="footer-link media-margin-bottom-20">Магазин</a>
+          <a href="#" class="footer-link media-margin-bottom-20">Обслуживание</a>
+          <a href="#" class="footer-link media-margin-bottom-20">Блог</a>
+          <a href="#" class="footer-link media-margin-bottom-20">Поддержка</a>
+          <a href="#" class="footer-link">Контакты</a>
+        </nav>
+      </div>
     </div>
 
   </footer>

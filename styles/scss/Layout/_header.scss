@@ -3,5 +3,13 @@
 .header {
   position: absolute;
   width: 100%;
-  @include margin(top, 25);
+  top: 25px;
+}
+
+.header-logo-flex-grow {
+  flex-grow: 1;
+}
+
+.header-menu-flex-grow {
+  flex-grow: 5;
 }

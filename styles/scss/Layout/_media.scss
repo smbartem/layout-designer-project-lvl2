@@ -14,8 +14,8 @@
   .container {
     width: 1000px;
   }
-  
-  .subscription-container {
+
+  .subscription-container-width {
     width: 293px;
   }
 
@@ -61,7 +61,7 @@
     width: 728px;
   }
 
-  .subscription-container {
+  .subscription-container-width {
     width: 213px;
   }
 
@@ -117,10 +117,14 @@
   }
 
   .subscription-container {
-    width: 280px;
     @include padding(top, 20);
     @include padding(bottom, 15);
     @include margin(bottom, 50);
+    height: 463px;
+  }
+
+  .subscription-container-width {
+    width: 280px;
   }
 
   .subscription-subtitle, .discography-title {
@@ -133,10 +137,6 @@
 
   .news-author-width {
     width: 280px;
-  }
-
-  .subscription-subtitle {
-    @include margin(bottom, 167.5);
   }
 
   .button-subscription-text, .subscription-text, .banner-text, .similar-artists-text {

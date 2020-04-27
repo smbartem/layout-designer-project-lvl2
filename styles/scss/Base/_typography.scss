@@ -100,7 +100,6 @@ body, a, input {
 .subscription-subtitle {
   @include fonts-decor(normal, $color-white, uppercase);
   text-align: center;
-  @include margin(bottom, 223);
 }
 
 .subscription-price {

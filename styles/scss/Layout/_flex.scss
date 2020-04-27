@@ -20,7 +20,6 @@
   @include flexbox();
   @include justify-content();
   @include flex-direction();
-  //@include align-items();
 }
 
 .flex-column {
@@ -30,5 +29,9 @@
 
 .align-content-s-b {
   align-content: space-between;
+}
+
+.justify-content-s-b {
+  justify-content: space-between;
 }
 

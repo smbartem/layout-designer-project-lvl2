@@ -35,13 +35,13 @@ body, a, input {
   text-transform: none;
 }
 
-.header-text-style {
+.header-text-style, .menu-header-link {
   font-weight: bold;
   color: #808080;
   text-transform: uppercase;
 }
 
-.header-text-style, .subscription-price-text {
+.header-text-style, .menu-header-link, .subscription-price-text {
   font-size: 1.1rem;
   line-height: 1.3rem;
 }
@@ -169,7 +169,6 @@ body, a, input {
   color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 223px;
 }
 
 .subscription-price {
@@ -337,7 +336,7 @@ body, a, input {
   height: 19px;
 }
 
-.display-flex {
+.display-flex, .menu-header {
   display: flex;
   flex-wrap: wrap;
 }
@@ -368,6 +367,14 @@ body, a, input {
 
 .align-content-s-b {
   align-content: space-between;
+}
+
+.justify-content-s-b {
+  justify-content: space-between;
+}
+
+.menu-header-link {
+  margin-right: 37px;
 }
 
 .searching-form {
@@ -477,10 +484,6 @@ body, a, input {
   margin-right: 210px;
 }
 
-.header-menu-link-margin {
-  margin-right: 37px;
-}
-
 .margin-right-50 {
   margin-right: 50px;
 }
@@ -505,16 +508,16 @@ body, a, input {
   max-width: 87.5%;
 }
 
+.subscription-container-width {
+  max-width: 352px;
+}
+
 .news-author-width {
   max-width: 210px;
 }
 
 .mobile-app-text-width {
   max-width: 566.23px;
-}
-
-.header-menu-form-width {
-  width: 83.78%;
 }
 
 .registration-form {
@@ -555,8 +558,7 @@ body, a, input {
 }
 
 .button-subscription {
-  width: 85.23%;
-  padding: 21px 0;
+  padding: 21px 83px;
 }
 
 .button-subscription-decor {
@@ -566,10 +568,10 @@ body, a, input {
 }
 
 .subscription-container {
-  width: 352px;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding: 25px 25px 50px;
+  box-sizing: border-box;
   align-items: center;
+  height: 570px;
 }
 
 .background-subscription-free {
@@ -724,7 +726,7 @@ body {
     width: 1000px;
   }
 
-  .subscription-container {
+  .subscription-container-width {
     width: 293px;
   }
 
@@ -767,7 +769,7 @@ body {
     width: 728px;
   }
 
-  .subscription-container {
+  .subscription-container-width {
     width: 213px;
   }
 
@@ -821,10 +823,14 @@ body {
   }
 
   .subscription-container {
-    width: 280px;
     padding-top: 20px;
     padding-bottom: 15px;
     margin-bottom: 50px;
+    height: 463px;
+  }
+
+  .subscription-container-width {
+    width: 280px;
   }
 
   .subscription-subtitle, .discography-title {
@@ -838,10 +844,6 @@ body {
 
   .news-author-width {
     width: 280px;
-  }
-
-  .subscription-subtitle {
-    margin-bottom: 167.5px;
   }
 
   .button-subscription-text, .subscription-text, .banner-text, .similar-artists-text {

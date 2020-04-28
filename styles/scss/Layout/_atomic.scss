@@ -1,5 +1,6 @@
 
 //margin
+@include margin-new-class(bottom, 5);
 @include margin-new-class(bottom, 10);
 @include margin-new-class(bottom, 15);
 @include margin-new-class(bottom, 20);
@@ -11,18 +12,6 @@
 @include margin-new-class(bottom, 50);
 @include margin-new-class(bottom, 70);
 
-.margin-bottom-author {
-  @include margin(bottom, 45);
-}
-
-.margin-bottom-subscription {
-  @include margin(bottom, 50);
-}
-
-.button-subscription-margin {
-  @include margin(bottom, 50);
-}
-
 .button-artist {
   @include margin(right, 35);
 }
@@ -31,12 +20,14 @@
   @include margin(right, 210);
 }
 
-@include margin-new-class(right, 50);
-
 //padding
 @include padding-new-class(bottom, 5);
 @include padding-new-class(bottom, 100);
 @include padding-new-class(top, 100);
+
+.padding-horizontal-25 {
+  padding: 0 25px;
+}
 
 .padding-top-news {
   @include padding(top, 100);
@@ -44,11 +35,7 @@
 
 //width
 .width-87 {
-  max-width: 87.5%;
-}
-
-.subscription-container-width {
-  max-width: 352px;
+  width: 87%;
 }
 
 .news-author-width{
@@ -56,5 +43,5 @@
 }
 
 .mobile-app-text-width {
-  max-width: 566.23px;
+  max-width: 566px;
 }

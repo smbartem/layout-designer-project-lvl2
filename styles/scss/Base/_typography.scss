@@ -25,7 +25,7 @@ body, a, input {
   color: $color-gray;
 }
 
-.banner-main-title {
+h1 {
   @include fonts(6, 7);
   @include fonts-decor(bold, $color-white, uppercase);
 }
@@ -88,7 +88,7 @@ body, a, input {
   @include fonts-decor(bold, $color-white, uppercase);
 }
 
-.title {
+h2 {
   @include fonts(3.8, 4.5);
   @include fonts-decor(bold, $color-white, uppercase);
 }

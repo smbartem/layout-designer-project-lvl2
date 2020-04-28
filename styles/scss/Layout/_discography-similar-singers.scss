@@ -1,12 +1,16 @@
 @import "../Components/button-discography.scss";
 
-@include background-image-new-class(album-1, "../images/Brother.png");
-@include background-image-new-class(album-2, "../images/Out of My Hands.png");
-@include background-image-new-class(album-3, "../images/Letter from Egypt.png");
-@include background-image-new-class(album-4, "../images/Vogts Villa.png");
-@include background-image-new-class(album-5, "../images/Wild Seed.png");
-@include background-image-new-class(album-6, "../images/Poetenes Evangelium.png");
+.albums {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
 
-.discography-container-height, .similar-singers-container-height  {
+.album-picture {
+  width: 100%;
+}
+
+.discography-container, .similar-singers-container  {
   height: 674px;
+  margin: 0 -25px;
 }

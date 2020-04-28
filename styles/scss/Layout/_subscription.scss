@@ -7,7 +7,9 @@
   height: 570px;
 }
 
-
+.subscription-container-width {
+  max-width: 352px;
+}
 
 .background-subscription-free {
   @include background-image("../images/subscribe_1.png");

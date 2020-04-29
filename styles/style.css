@@ -488,12 +488,8 @@ h2 {
   padding-top: 100px;
 }
 
-.padding-horizontal-25 {
-  padding: 0 25px;
-}
-
-.padding-top-news {
-  padding-top: 100px;
+.padding-all-25 {
+  padding: 25px;
 }
 
 .width-87 {
@@ -628,7 +624,7 @@ h2 {
 .artists {
   padding-top: 280px;
   padding-bottom: 82px;
-  background: url("../images/Morten Harket.png") no-repeat 73% center;
+  background: url("../images/Morten-Harket.png") no-repeat 73% center;
   background-size: cover;
 }
 
@@ -656,8 +652,7 @@ h2 {
 }
 
 .discography-container, .similar-singers-container {
-  height: 674px;
-  margin: 0 -25px;
+  margin: -25px;
 }
 
 body {
@@ -702,10 +697,6 @@ body {
     margin-right: 50px;
   }
 
-  .discography-container, .similar-singers-container {
-    height: 624px;
-  }
-
   .albums, .similar-artists-photo {
     width: 200px;
     height: 200px;
@@ -747,10 +738,6 @@ body {
   .container-artists-track {
     width: 323px;
     margin-right: 41px;
-  }
-
-  .discography-container, .similar-singers-container {
-    height: 448px;
   }
 
   .albums, .similar-artists-photo {
@@ -821,14 +808,8 @@ body {
     margin-bottom: 30px;
   }
 
-  .discography-container {
-    height: 781px;
-    margin: 0 -10px;
-  }
-
-  .similar-singers-container {
-    height: 1042px;
-    margin: 0 -10px;
+  .discography-container, .similar-singers-container {
+    margin: -25px -10px;
   }
 
   .container-footer-menu-1, .container-footer-menu-2 {
@@ -896,8 +877,8 @@ body {
     margin-right: 0px;
   }
 
-  .media-padding-horizontal-10 {
-    padding: 0 10px;
+  .media-padding-25-10 {
+    padding: 25px 10px;
   }
 
   .logo-avatar {
@@ -914,7 +895,7 @@ body {
     padding-bottom: 50px;
   }
 
-  .padding-top-news {
+  .media-padding-top-44 {
     padding-top: 44px;
   }
 

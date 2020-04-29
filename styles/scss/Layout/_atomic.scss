@@ -25,12 +25,8 @@
 @include padding-new-class(bottom, 100);
 @include padding-new-class(top, 100);
 
-.padding-horizontal-25 {
-  padding: 0 25px;
-}
-
-.padding-top-news {
-  @include padding(top, 100);
+.padding-all-25 {
+  padding: 25px;
 }
 
 //width
